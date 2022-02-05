@@ -12,6 +12,7 @@
 }
 
 .ip {
-  font-size: minmax(16px, 2rem);
+  font-size: clamp(24px, 14vh, 1.5rem);
+  color: white;
   font-weight: bold;
 }

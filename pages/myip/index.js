@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import styles from './styles/MyIp.module.css'
 
 export default function MyIp({ ip }) {
