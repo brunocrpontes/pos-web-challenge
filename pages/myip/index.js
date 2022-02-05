@@ -15,8 +15,8 @@ export default function MyIp({ ip }) {
 }
 
 export async function getServerSideProps({req}) {
-  const ip = req.headers.get('x-forwarded-for')
-    ? req.headers.get('x-forwarded-for').split(',')[0]
+  const ip = req.headers['x-forwarded-for']
+    ? req.headers['x-forwarded-for'].split(',')[0]
     : '127.0.0.1';
 
   return { props: { ip } };
