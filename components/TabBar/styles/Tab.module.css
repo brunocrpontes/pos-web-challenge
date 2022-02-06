@@ -1,0 +1,21 @@
+.tab {
+  padding: 6px 0px;
+  width: 100px;
+  background: white;
+  color: #9A9A9A;
+  font-size: clamp(14px, 10vh, 0.875rem);
+  line-height: clamp(20px, 11vh, 1.25rem);
+  border: none;
+  text-align: center;
+}
+
+.tab[data-selected="true"] {
+  color: white;
+  background: linear-gradient(267.05deg, rgba(234, 92, 197, 0.8) 0.74%, rgba(192, 77, 240, 0.8) 51.4%, rgba(140, 128, 244, 0.8) 100%);
+}
+
+@media only screen and (min-width: 980px) {
+  .tab {
+    width: 134px;
+  }
+}

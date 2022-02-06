@@ -1,0 +1,19 @@
+.tab_bar_container {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  border-radius: 0.625rem;
+  margin: 1rem 0px;
+}
+
+.tab_bar_container *:not(:first-child):not(:last-child) {
+  margin: 0px 0.125rem;
+}
+
+@media only screen and (min-width: 980px) {
+  .tab_bar_container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

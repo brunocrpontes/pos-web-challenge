@@ -14,47 +14,9 @@
   color: white;
 }
 
-.tabs_container {
-  display: flex;
-  flex-direction: row;
-  overflow: hidden;
-  border-radius: 10px;
-  margin: 1rem 0px;
-}
-
-.tabs_container .tab:not(:first-child):not(:last-child) {
-  margin: 0px 2px;
-}
-
-.tab {
-  height: 33px;
-  width: 100px;
-  background: white;
-  color: #9A9A9A;
-  font-size: clamp(14px, 10vh, 0.875rem);
-  line-height: clamp(20px, 11vh, 1.25rem);
-  border: none;
-}
-
-.tab[data-selected="true"] {
-  color: white;
-  background: linear-gradient(267.05deg, rgba(234, 92, 197, 0.8) 0.74%, rgba(192, 77, 240, 0.8) 51.4%, rgba(140, 128, 244, 0.8) 100%);
-}
-
-
 @media only screen and (min-width: 980px) {
   .container {
     flex-direction: row;
     padding: 0px clamp(16px, 10vh, 2.5rem);
-  }
-
-  .tabs_container {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .tab {
-    width: 134px;
   }
 }
